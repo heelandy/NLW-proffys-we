@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/projectweb/style/style.css">
+    <link rel="stylesheet" href="/projectweb/style/partials/page-header.css">
+    <link rel="stylesheet" href="/projectweb/style/partials/forms.css">
+    <link rel="stylesheet" href="/projectweb/public/style/partials/page-give-class.css">
+
+    
+</head>
+<body id="page-give-classes">
+    <div id="container">
+        <header class="page-header">
+            <div class="top-bar-container">
+                <a href="/projectweb/">
+                <img src="/projectweb/images/icons/back.svg" alt="voltar">
+             </a>  
+              <img src="/projectweb/images/logo.svg" alt="Proffy">
+            </div>
+
+            <div class="header-content">
+                <strong> Lorem ipsum dolor sit amet consectetur repellat.</strong>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>       
+            </div>
+        </header>
+       <main>
+         <form id="create-class">
+             <fieldset>
+                 <legend>Seu Dados</legend>
+                 <div class="input-block">
+                     <label for="name">Nome completo</label>
+                     <input name="name" id="name" required>
+                 </div>
+                 <div class="input-block">
+                     <label for="avatar">Link da sua foto <small>(comece com https://)</small></label>
+                    <input name="avatar" id="avatar" required>
+                    </div>
+                 <div class="input-block">
+                     <label for="whatsapp">whatsapp <small>(somente numeros)</small></label>
+                     <input name="whatsapp" id="whatsapp" required>
+                 </div>
+                 <div class="textarea-block">
+                     <label for="bio">Biografia</label>
+                     <textarea name="bio" id="bio" required></textarea>
+                 </div>
+             </fieldset>
+
+             <fieldset>
+                 <legend>Sobre a Aula</legend>
+              <div class="select-block">
+                 <label for="subject">Materia</label>
+                <select name="subject" id="subject" required>
+                 <option value="" disabled="" hidden="">Selecione uma Opcao</option>
+                        <option value="1">Artes</option>
+                        <option value="2">Biologia</option>
+                        <option value="3">Ciencias</option>
+                        <option value="4">Educacao Fisica</option>
+                        <option value="5">Fisica</option>
+                        <option value="6">Geografia</option>
+                        <option value="7">Historia</option>
+                        <option value="8">Mtematica</option>
+                        <option value="9">Portugues</option>
+                        <option value="10">Quimica</option>  
+               </select>
+             </div>
+             <div class="input-block">
+                <label for="consectetur">Custo da sua Aula/Hora <small>(R$)</small></label>
+                <input type="cost" id="cost" type="number" required>
+                </div>
+             </fieldset>
+
+              <fieldset>
+                 <legend>Horarios diponiveis
+                     <button id="add-time">+ Novo Horario</button>
+                    </legend>
+                     <div class="schedule-item">
+                         <div class="select-block">
+                             <label for="weekday">Dia da semana</label>
+                             <select name="weekday[]" id="weekday" required>
+                                <option value="" >Selecione um dia</option>
+                                <option value="0">Domingo</option> 
+                                <option value="1">Segunda</option>
+                                <option value="2">Terca</option> 
+                                <option value="3">Quarta</option> 
+                                <option value="4">Quinta</option> 
+                                <option value="5">sexta</option> 
+                                <option value="6">Sabado</option>
+                             </select>
+                         </div>
+                            <div class="input-block">
+                                <label for="time_from">Das</label>
+                                <input type="time" name="time_from[]" required>
+                            </div>   
+                            
+                            <div class="input-block">
+                                <label for="time_to">Ate</label>
+                                <input type="time" name="time_to[]" required>
+                            </div>   
+
+                            
+                        </div>
+                 </fieldset>               
+                            
+         </form>
+          <footer>
+             <p>
+                 <img src="/projectweb/images/icons/warning.svg" alt="Aviso importante">
+                 Importante! <br>Preencha todos os Dados
+             </p>
+             <button type="submit" form="create-class">Salvar cadastro</button>
+         </footer>
+
+       </main>
+    </div>
+</body>
+</html>

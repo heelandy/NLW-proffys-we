@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffy | Sua plataforma de estudo online</title>
+    <link rel="stylesheet" href="/projectweb/style/style.css">
+    <link rel="stylesheet" href="/projectweb/style/partials/page-header.css">
+    <link rel="stylesheet" href="/projectweb/style/partials/forms.css">
+    <link rel="stylesheet" href="/projectweb/style/partials/page-study.css">
+    </head>
+<body id="page-study">
+    <div id="container">
+        <header class="page-header">
+            <div class="top-bar-container">
+                <a href="/projectweb/">
+                <img src="/projectweb/images/icons/back.svg" alt="voltar">
+             </a>  
+              <img src="/projectweb/images/logo.svg" alt="Proffy">
+            </div>
+
+            <div class="header-content">
+                <strong> Esses sao os Proffys disponiveis</strong>
+            <form id="search-teachers">
+                <div class="select-block">
+                    <label for="subject">Material</label>
+                    <select name="subject" id="subject">
+                        <option value="" disabled="" hidden="">Selecione uma opcao</option>
+                        <option value="1">Artes</option>
+                        <option value="2">Biologia</option>
+                        <option value="3">Ciencias</option>
+                        <option value="4">Educacao Fisica</option>
+                        <option value="5">Fisica</option>
+                        <option value="6">Geografia</option>
+                        <option value="7">Historia</option>
+                        <option value="8">Mtematica</option>
+                        <option value="9">Portugues</option>
+                        <option value="10">Quimica</option>                        
+                    </select>
+                </div>
+
+                <div class="select-block">
+                    <label for="weekday">Dia da semana</label>
+                    <select name="weekday" id="weekday">
+                   <option value="" disabled="" hidden="">Selecione um dia</option>
+                   <option value="0">Domingo</option> 
+                   <option value="1">Segunda</option>
+                   <option value="2">Terca</option> 
+                   <option value="3">Quarta</option> 
+                   <option value="4">Quinta</option> 
+                   <option value="5">sexta</option> 
+                   <option value="6">Sabado</option> 
+                 </select>
+                </div>
+
+                <div class="input-block">
+                    <label for="time">Hora</label>
+                    <input name="time" id="time" type="time"min="0" max="24">
+                </div>
+                <button type="submit">Filtrar</button>
+            </form>
+         </div>
+        </header>
+
+        <main>
+            <article class="teacher-item">
+                <header>
+                   <!-- avatr<img src="" alt="">-->
+                   <div>
+                       <strong>Diego Fernadez</strong>
+                       <span>Quimica</span>
+                   </div>
+                </header>
+                <p>Entusiasta das melhores technologia de quimica avencada. <br><br>Apaixonadopor explodir coisas em laboratorio</p>
+               <footer>
+                   <p>Preco/Hora
+                       <strong>R$20</strong>
+                   </p>
+                   <button type="button"> <img src="/projectweb/images/icons/whatsapp.svg" alt="whatsapp">Entre em contacto</button>
+               </footer>
+            </article>
+            <article class="teacher-item">
+                <header>
+                   <!-- avatr<img src="" alt="">-->
+                   <div>
+                       <strong>Diego Fernadez</strong>
+                       <span>Quimica</span>
+                   </div>
+                </header>
+                <p>Entusiasta das melhores technologia de quimica avencada. <br><br>Apaixonadopor explodir coisas em laboratorio</p>
+               <footer>
+                   <p>Preco/Hora
+                       <strong>R$20</strong>
+                   </p>
+                   <button type="button"> <img src="/projectweb/images/icons/whatsapp.svg" alt="whatsapp">Entre em contacto</button>
+               </footer>
+            </article>
+        </main>
+        
+    </div>
+</body>
+</html>
