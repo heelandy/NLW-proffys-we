@@ -3,13 +3,14 @@ const server = express()
 
 server.use(express.static("public"))
 
-.get("/home/heel/Programa/projectweb/", (req, res)=>{
- return res.sendFile(__dirname + "/home/heel/Programa/projectweb/view/index.html")
+.get("/", (req, res)=>{
+ return res.sendFile(__dirname + "/view/index.html")
 })
-.get("/home/heel/Programa/projectweb/study" , (req, res) => {
-    return res.sendFile(__dirname + "/home/heel/Programa/projectweb/view/study.html")
+.get("/study" , (req, res) => {
+    return res.sendFile(__dirname + "/view/study.html")
 })
-.get("/home/heel/Programa/projectweb/page-give-class" , (req, res) => {
-    return res.sendFile(__dirname + "/home/heel/Programa/projectweb/view/study.html")
+.get("/page-give-class" , (req, res) => {
+    return res.sendFile(__dirname + "/view/page-give-class.html")
 })
-.listen(5500)
+.listen(5000)
+

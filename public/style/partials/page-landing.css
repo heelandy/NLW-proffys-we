@@ -26,13 +26,13 @@
     width: 100%;
 }
 
-.buttons-container {
+.button {
     display: flex;
     justify-content: center;
     margin: 3.2rem 0;
 }
 
-.buttons-container a {
+.button a {
     width: 30rem;
     height: 10.4rem;
 
@@ -52,30 +52,31 @@
     transition: background 0.4s;
 }
 
-.buttons-container a img {
+.button a img {
     width: 4rem;
     margin-right: 2.4rem;
+    
 }
 
-.buttons-container a.study {
+.button a.study {
     background-color: var( --color-primary-lighter);
 }
 
-.buttons-container a.study:hover {
+.button a.study:hover {
     background: var(--color-primary-light);
 }
 
-.buttons-container a.give-classes {
+.button a.give-classes {
     background: var(--color-secondary);
     margin-right: 0;
 
 }
 
-.buttons-container a.give-classes:hover {
+.button a.give-classes:hover {
     background: var(--color-secondary-dark);
 }
 
-.total-connections {
+.total-connection {
     font-size: 1.8rem;
 
     display: flex;
@@ -83,7 +84,7 @@
     justify-content: center;
 }
 
-.total-connections img {
+.total-connection img {
     margin-left: 0.8rem;
 }
 
@@ -117,13 +118,13 @@
         grid-area: image;
         height: 350px;
     }
-    .buttons-container {
+    .button {
         grid-area: button;
         /* Faz parte do flex */
         justify-content: flex-start;
         margin: 0;
     }
-    .total-connections {
+    .total-connection {
         grid-area: texting;
         /* faz parte do grid */
         justify-self: end;

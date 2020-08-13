@@ -44,11 +44,7 @@
 
     color: var(--color-primary);
 
-    font: 700 1.6rem Archivo;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 8.2rem;
+    font: 700 1.6rem Archivo;    
     cursor: pointer;
 
     transition: 0.2s;
