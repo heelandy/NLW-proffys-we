@@ -10,7 +10,8 @@ const proffys =[
      time_to:[1220]
             
     }
-    ]           
+    ]   
+
 const subjects = [
     
     "Artes",
@@ -48,9 +49,10 @@ function pageStudy(req, res) {
     return res.render("study.html", {proffys, filters, subjects, weekdays})
 }
 function pageGiveClass(req, res) {
-    res.render("page-give-class.html")
+    res.render("page-give-class.html", {subjects, weekdays})
 }
-//configurando o nunjucks
+
+//configurando o nunjucks (template engine)
 const nunjucks = require('nunjucks') 
 nunjucks.configure("src/view", {
     express: server,
