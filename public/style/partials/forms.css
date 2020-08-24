@@ -1,6 +1,5 @@
 
 
-form-css
 .select-block label,
 .input-block label,
 .textarea-block label {
@@ -45,4 +44,8 @@ form-css
     bottom: 0px;
 }
 
-
+label small {
+    font-size: 1.2rem;
+    padding-left: 1.2rem;
+    color: var(--color-small-info);
+}

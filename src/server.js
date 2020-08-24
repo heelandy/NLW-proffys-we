@@ -41,14 +41,34 @@ const weekdays = [
 const express = require('express')
 const server = express()
 
+function getSubject(subjectNumber){
+     const position = +subjectNumber -1
+    return subjects[position]
+}
+
+
 function pageLanding(req, res) {
     return res.render("index.html")
 }
+
+
 function pageStudy(req, res) {
     const filters = req.query
     return res.render("study.html", {proffys, filters, subjects, weekdays})
 }
+
+
 function pageGiveClass(req, res) {
+    const data = req.query 
+    
+     const isNotEmpty = Object.keys(data).length !=0
+      
+     if (isNotEmpty) {
+        data.subject = getSubject(data.subject)
+
+        proffys.push(dados)
+        res.redirect("/study")
+      } 
     res.render("page-give-class.html", {subjects, weekdays})
 }
 
